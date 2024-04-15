@@ -145,6 +145,7 @@ main {
     justify-content: center;
 }
 
+
 .pokemon-imagen img {
     width: 100%;
     max-width: 6rem;
@@ -202,7 +203,7 @@ main {
 .stat {
     background-color: var(--clr-black);
     padding: .25rem .5rem;
-    border-radius: 100vmax;
+    border-radius: 25px;
 }
 
 
