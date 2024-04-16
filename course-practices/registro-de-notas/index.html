@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<title>App de Registro</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>App de Registro</title>
+  </head>
+  <body>
     <h2>Registro de Estudiantes</h2>
-    <form id="registroForm">
+    <div class="regis-estudiante">
+      <form class="" id="registroForm">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required><br><br>
+        <input type="text" id="nombre" required /><br /><br />
         <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" required><br><br>
+        <input type="text" id="apellido" required /><br /><br />
         <label for="matricula">Matricula:</label>
-        <input type="text" id="matricula" required><br><br>
+        <input type="text" id="matricula" required /><br /><br />
         <label for="curso">Curso:</label>
-        <input type="text" id="curso" required><br><br>
+        <input type="text" id="curso" required /><br /><br />
         <button type="submit" class="btn">Agregar</button>
-    </form>
-    <table id="tablaEstudiantes">
+      </form>
+    </div>
+    <div class="table-estudiante">
+      <table id="tablaEstudiantes">
         <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Matricula</th>
-                <th>Curso</th>
-                <th>Acciones</th>
-            </tr>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Matricula</th>
+            <th>Curso</th>
+            <th>Acciones</th>
+          </tr>
         </thead>
         <tbody></tbody>
-    </table>
-    
+      </table>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

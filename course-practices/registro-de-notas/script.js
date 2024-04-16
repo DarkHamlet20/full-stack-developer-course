@@ -17,7 +17,7 @@ function agregarDatos() {
     celdaApellido.innerHTML = apellido;
     celdaMatricula.innerHTML = matricula;
     celdaCurso.innerHTML = curso;
-    celdaAcciones.innerHTML = '<button onclick="editarFila(this)">Editar</button> <button onclick="eliminarFila(this)">Eliminar</button>';
+    celdaAcciones.innerHTML = '<button class="boton-editar" onclick="editarFila(this)">Editar</button> <button class="boton-eliminar" onclick="eliminarFila(this)">Eliminar</button>';
     limpiarInputs()
 }
 
@@ -27,7 +27,7 @@ function editarFila(btn) {
     var fila = btn.parentNode.parentNode;
     var celdas = fila.getElementsByTagName('td');
     
-    for (var i = 0; i < celdas.length - 1; i++) { // No necesitamos editar la última celda (acciones)
+    for (var i = 0; i < celdas.length - 1; i++) { 
         var valorActual = celdas[i].innerHTML;
         celdas[i].innerHTML = '<input type="text" value="' + valorActual + '">';
     }
@@ -42,7 +42,7 @@ function guardarEdicion(btn) {
     var fila = btn.parentNode.parentNode;
     var celdas = fila.getElementsByTagName('td');
     
-    for (var i = 0; i < celdas.length - 1; i++) { // No necesitamos editar la última celda (acciones)
+    for (var i = 0; i < celdas.length - 1; i++) { 
         var nuevoValor = celdas[i].querySelector('input').value;
         celdas[i].innerHTML = nuevoValor;
     }
@@ -50,7 +50,6 @@ function guardarEdicion(btn) {
     // Cambiamos el botón "Guardar" de nuevo a "Editar"
     btn.innerHTML = 'Editar';
     btn.setAttribute('onclick', 'editarFila(this)');
-    limpiarInputs()
 }
 
 function limpiarInputs() {
