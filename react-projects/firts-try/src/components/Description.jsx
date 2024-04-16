@@ -1,19 +1,18 @@
 import React from "react";
 import "../stylesheets/description.css";
 
-function DescriptionPokemon() {
+function DescriptionPokemon(props) {
   return (
     <div className="contenedor-description">
       <img
-        className="img-description"
-        src={require("../img/Lucario.png")}
-        alt="image pokemon"
+        className="img-pokemon"
+        src={require(`../img/${props.img}`)}
+        alt="pokemon"
       />
       <div className="description-pokemon">
-        <p className="nombre-pokemon">Lucario</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque earum iure, quasi asperiores ipsum nemo neque minima obcaecati, eveniet repellendus porro repudiandae quaerat molestias error voluptates provident vel distinctio. Nemo.</p>
+        <p className="nombre-pokemon"><strong>{props.nombre}</strong></p>
         <p className="biologia-pokemon">
-          Es de tipo lucha/acero, Lucario tiene una habilidad especial conocida como vista aural que le permite ver el aura de las personas y de los Pokémon, con lo que también puede detectar dónde se encuentran. Además, gracias a esta habilidad tiene un movimiento característico, llamado esfera aural, que nunca falla.
+          {props.biologia}
         </p>
       </div>
     </div>

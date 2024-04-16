@@ -3,7 +3,7 @@
   padding:0;
 }
 
-html,body{
+html, body{
   font-size: 18px;
   background-color: rgb(0, 0, 0);
 }
@@ -19,17 +19,17 @@ h1{
 
 .App{
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
+  display: flex; 
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   text-align: center;
   color: white;
 }
 
-.contenedor-description{
-  display: flex;
+.contenedor-principal{
   min-height: 600px;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
