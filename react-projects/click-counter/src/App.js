@@ -2,15 +2,17 @@ import "../src/App.css";
 import talendingLogo from "../src/img/talendingLogo.png";
 import Boton from "./components/Boton";
 import Contador from "./components/Contador";
+import { useState } from "react";
 
 function App() {
+  const [numClicks, setNumClicks] = useState(0);
 
-  const manejarClick = () =>{
-
-  }
-  const reiniciarContador = () =>{
-
-  }
+  const manejarClick = () => {
+    setNumClicks(numClicks + 1);
+  };
+  const reiniciarContador = () => {
+    setNumClicks(0);
+  };
   return (
     <div className="App">
       <div className="talending-logo-container">
@@ -21,15 +23,16 @@ function App() {
         />
       </div>
       <div className="contenedor-principal">
-        <Contador numClicks="5"/>
+        <Contador numClicks={numClicks} 
+        />
+        <Boton text="Click" 
+        esBotonClick={true} 
+        manejarClick={manejarClick} />
         <Boton
-          text="Click"
-          esBotonClick={true}
-          manejarClic={manejarClick} />
-        <Boton 
-        text="Reiniciar"
-        esBotonClick={false}
-        manejarClic={reiniciarContador} />
+          text="Reiniciar"
+          esBotonClick={false}
+          manejarClick={reiniciarContador}
+        />
       </div>
     </div>
   );
