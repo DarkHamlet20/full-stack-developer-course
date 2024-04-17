@@ -1,11 +1,12 @@
 import React from "react";
+import "../style/Botons.css"
 
 
-function Boton ({ text, esBotonClick, manejarClic}){
+function Boton ({ text, esBotonClick, manejarClick}){
     return(
         <button
-        className={ esBotonClick ? "boton-clic" : "boton-reiniciar" }
-        onClick={manejarClic}>
+        className={ esBotonClick ? "boton-click" : "boton-reiniciar" }
+        onClick={manejarClick}>
             {text}
         </button>
     )
