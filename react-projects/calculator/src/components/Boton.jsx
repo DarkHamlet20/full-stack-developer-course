@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/Boton.css"
 function Boton (props){
 
 const esOperador = valor =>{
@@ -7,7 +7,7 @@ const esOperador = valor =>{
 };
 
     return(
-        <div className={`boton-contenedor ${esOperador(props.children) ? "operador" : null}`}>
+        <div className={`boton-container ${esOperador(props.children) ? "operator" : ""}`.trimEnd()}>
             {props.children}
         </div>
     )
