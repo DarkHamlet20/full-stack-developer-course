@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TareaFormulario from './TareaFormulario';
 import Tarea from './Tarea';
-import '../hojas-de-estilo/ListaDeTareas.css';
+import '../styles/ListaDeTareas.css';
 
 function ListaDeTareas() {
 
