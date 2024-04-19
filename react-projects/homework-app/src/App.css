@@ -27,7 +27,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
   }
   
   
@@ -44,7 +44,7 @@
   }
   
   .talending-logo {
-    padding: 20px;
+    padding: 30px;
   }
   
   
