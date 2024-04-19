@@ -9,23 +9,25 @@
   .tarea-input {
     width: 350px;
     font-size: 18px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.767);
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
-    border: 2px solid #00471b;
+    border: 2px solid #9e0000;
     outline: none;
+    color: white;
   }
   
   
   .tarea-boton {
     padding: 16px;
-    font-size: 18px;
-    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     outline: none;
-    background: #00471b;
+    background: #9e0000c5;
     color: #fff;
     text-transform: capitalize;
+    
   }

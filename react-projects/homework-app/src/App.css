@@ -7,15 +7,17 @@
   html, 
   body {
     color: white;
-    background-color: #1b1b32;
-    font-family: Lato, sans-serif;
-    margin-top: 40px;
+    background-image: url(./img/night-sky-colorful-beautiful-clouds-mountain-valley-digital-art-4k-wallpaper-uhdpaper.com-608@1@k.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
   }
   
   h1 {
-    color: #1b1b32;
-    font-size: 25px;
-    font-family: Roboto, sans-serif;
+    color: #000000;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin: 20px 0;
   }
@@ -25,27 +27,33 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
   }
   
   
   .talending-logo-container {
-    width: 100%;
+    width: 600px;
+    margin: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 25px;
+    background-color: #00000073;
+    box-shadow: 3px 5px 15px 10px;
+    border-radius: 25px;
   }
   
   .talending-logo {
-    width: 400px;
-    height: 80px;
+    padding: 20px;
   }
   
   
   .tareas-lista-principal {
     width: 600px;
     min-height: 500px;
-    background-color: #d0d0d5;
+    background-color: #d0d0d55e;
     padding: 25px;
-    margin: 10px;
+    margin-top: -25px;
     border-radius: 26px;
+    border: 3px solid black;
   }

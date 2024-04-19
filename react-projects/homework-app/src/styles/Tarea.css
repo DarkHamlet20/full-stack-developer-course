@@ -1,5 +1,5 @@
 .tarea-contenedor {
-    width: 500px;
+    width: 480px;
     min-height: 65px;
     background-color: #1b1b32;
     margin: 5px 0;
@@ -14,22 +14,22 @@
   
   
   .tarea-contenedor:nth-child(3n + 1) {
-    background-color: #1b1b32;
+    background-color: #000000;
   }
   
   .tarea-contenedor:nth-child(3n + 2) {
-    background-color: #2a2a40;
+    background-color: #3b3b3b;
   }
   
   .tarea-contenedor:nth-child(3n + 3) {
-    background-color: #3b3b4f;
+    background-color: #585858;
   }
   
   
   .tarea-texto {
     width: 100%;
     height: 100%;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     overflow-wrap: anywhere;
